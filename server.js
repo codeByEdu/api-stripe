@@ -3,7 +3,7 @@
 
 const express = require('express');
 const app = express();
-const stripe = require('stripe')('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');
+const stripe = require('stripe')('');
 
 //ajuste o cors para liberar o acesso a sua aplicação para todos os domínios
 const cors = require('cors');
