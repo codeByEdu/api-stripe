@@ -3,7 +3,9 @@
 
 const express = require('express');
 const app = express();
-const stripe = require('stripe')('');
+
+require('dotenv').config();
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 //ajuste o cors para liberar o acesso a sua aplicação para todos os domínios
 const cors = require('cors');
