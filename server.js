@@ -18,6 +18,7 @@ app.use(bodyParser.json())
 
 
 app.post('/api/create-checkout-session', async (req, res) => {
+    console.log(req.body);
     try {
         console.log(req.body.itens);
 
