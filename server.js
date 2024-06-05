@@ -9,7 +9,9 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 //ajuste o cors para liberar o acesso a sua aplicação para todos os domínios
 const cors = require('cors');
-app.use(cors({ origin: '*' }));
+app.use(cors({
+    origin: 'https://wedding-site-nv1ecpd11-codebyedus-projects.vercel.app'
+}));
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 
