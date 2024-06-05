@@ -2,14 +2,15 @@
     "name": "api-stripe",
     "version": "1.0.0",
     "description": "API with Express and Stripe integration",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
-        "start": "node index.js"
+        "start": "node server.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
         "dotenv": "^16.4.5",
         "express": "^4.17.1",
-        "stripe": "^15.9.0"
+        "stripe": "^15.9.0",
+        "vercel": "^34.2.5"
     }
 }
